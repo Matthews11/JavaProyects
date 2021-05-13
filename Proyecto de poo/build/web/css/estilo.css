@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}    
+body{
+
+        font-family: 'PT Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+.header{
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 15% 5% 80%;
+    margin-bottom: 50px;
+    
+}
+.logo{
+
+    padding: 5px;
+    display: inline-block;
+    margin-left: 0px;
+    text-align: center;
+}
+.logo img{
+    width: 100px;
+    margin: auto;
+    text-align: center;
+   
+}
+
+.menu-main{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+    background: #3b5998;
+    border-bottom: 1px solid #29487d;
+    height: 45px;
+}
+
+.menu-main a{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background: rgba(0,0,0, .1);
+}
+
+.menu-main a.active{
+    background-color: #29487d;
+}
+
+@media (max-width: 768px) {
+    
+    .menu-main{
+        height: auto;
+        border-bottom: 0px;
+        display: block;
+    }
+    
+    .menu-main a{
+        height: 45px;
+        border-bottom: 1px solid #29487d;
+    }
+
+}
+
+.contenedor{
+    background:#29487d;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin: 50px;
+     border-radius: 20px;
+}
+
+.Contactos{
+    background: #3b5998;
+    text-align: justify;
+    padding: 30px;
+   
+}
+
+.Contactos h2,.Areas h2,.Redes h2{
+    text-align: center;
+    background: #3b5998;
+    color: white;
+    font-size: 30px;
+}
+
+.Contactos p,.Areas p{
+    font-size: 15px;
+    color: white;
+
+}
+
+
+.Areas{
+    background: #3b5998;
+    text-align: justify;
+    padding: 30px;
+   
+}
+
+.Redes{
+    backgrosund-color: #3b5998;
+    display: block;
+    text-align: justify;
+    padding: 30px;
+}
+
+.Redes img{
+    
+    width: 80PX;
+}
+
+.copy{
+    background-color: violet;
+}
+
+
+.fin{
+    background: #3b5998;
+    margin-top: 50px;
+    display:grid;
+    position: relative;
+    grid-template-columns: 50% 25% 25% ;
+    width: 100%;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #bbb8b8;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #29487d; 
+   
+}
