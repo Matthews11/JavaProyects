@@ -1,0 +1,21 @@
+SMAP
+consulta_jsp.java
+JSP
+*S JSP
+*F
++ 0 consulta.jsp
+consulta.jsp
++ 1 conexion.jsp
+conexion.jsp
+*L
+5,2:50
+5#1,12:52
+16:64
+7#0,13:65
+19,4:78
+22,2:82
+24,4:84,3
+28,2:96
+30,3:99
+32,6:102
+*E

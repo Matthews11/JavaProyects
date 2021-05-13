@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Formularios web de POO Insano</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="estilo.css">
+
+	<style>
+
+	</style>
+
+</head>
+<body>
+
+<form action="#" target="" method="get" name="formDatosPersonales">
+
+	<label for="nombre">Nombre</label>
+	<input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre vro"/>
+
+	<label for="email" />Email</label>
+	<input type="email" name="email" id="email" placeholder="Email" required />
+
+	<label for="asunto">Numero de caso</label>
+	<input type ="text" name="asunto" id="asunto" placeholder="Nº de Caso"/>
+
+	<label for="start">Fecha de Caso</label>
+
+	<input type="date" id="start" name="trip-start"
+       value="2021-01-01"
+       min="2021-04-01" max="2022-12-31">
+
+	<label for="mensaje">Descripcion de Caso</label>
+	<textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 500 carácteres" maxlength="500"></textarea>
+	
+	<input type="submit" name="enviar" value="enviar datos"/>
+</form>
+
+<form action="/action_page.php">
+	<label for="cars">Eliga su sexo insano:</label>
+	<select name="cars" id="cars">
+	  <option value="volvo">Hombre</option>
+	  <option value="saab">Mujer</option>
+	  <option value="opel">Bisexual</option>
+	  <option value="audi">Heterosexual</option>
+	</select>
+	<br><br>
+	<input type="submit" value="Enviar">
+  </form>
+
+</body>
+</html>

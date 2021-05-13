@@ -1,0 +1,20 @@
+SMAP
+ingresaremp_jsp.java
+JSP
+*S JSP
+*F
++ 0 ingresaremp.jsp
+ingresaremp.jsp
+*L
+5,45:45
+50:90,2
+51:92
+51,2:93
+52,2:95
+54:97,3
+55,2:100
+57,2:103
+58,3:105
+61:108,3
+62,2:111
+*E

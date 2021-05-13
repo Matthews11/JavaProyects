@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TABLA CASOS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo1.css">
+    </head>
+    <body>
+
+        <h1 class="titulo">Agregar Caso</h1>
+        <form action="ServletCasos" method="POST">
+        <table class="tabla">
+            <tbody>
+                <tr>
+                    <td><label for="codigo">Ingrese el Codigo del Caso : </label></td>
+                    <td><input type="text" name="codigo" id="codigo" value="" size="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="descripcion">Ingrese la Descripcion del caso: </label></td>
+                    <td><input type="text" name="descripcion" id="descripcion" value="" size="45" /></td>
+                </tr>
+                <tr>
+                    <td><label for="estado">Ingrese el Estado del Caso: </label></td>
+                    <td><input type="text" name="estado" id="estado" value="" size="45" /></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <input class="btn" type="submit" value="Enviar" />
+                        <input class="btn" type="reset" value="Limpiar" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    </body>
+</html>

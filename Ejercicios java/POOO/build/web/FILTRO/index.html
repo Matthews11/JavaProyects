@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabla de pedidos con filtro de búsqueda desarrollada con PHP, MySQL y Bootstrap</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-4">
+						<h2>Detalle del<b> Caso</b></h2>
+					</div>
+					
+                </div>
+            </div>
+
+            <div class="row text-center" id="loader" style="position: absolute;top: 140px;left: 50%">
+				
+			</div>
+
+
+			<div class="table-filter">
+				<div class="row">
+                    
+                    <div class="col-sm-9">
+						<button type="button" class="btn btn-primary"><i class="fa fa-search" onclick="load(1);"></i></button>
+						<div class="filter-group">
+							<label>Fecha</label>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<div class="filter-group">
+							<label>Fecha Inicial</label>
+							<select class="form-control" id="location" onchange="load(1);"> 
+								<option value="">Todos</option>
+								<option value="Berlin">Aca Fecha Rica</option>
+								<option value="London">Aca Fecha Rica</option>
+								<option value="Madrid">Aca Fecha Rica</option>
+								<option value="New York">New Aca Fecha Rica</option>
+								<option value="Paris">Aca Fecha Rica</option>								
+							</select>
+						</div>
+						<div class="filter-group">
+							<label>Fecha Final</label>
+							<select class="form-control" id="status" onchange="load(1);">
+								<option value="">Todos</option>
+								<option value="Entregado">Aca Fecha Rica</option>
+								<option value="Enviada">Aca Fecha Rica</option>
+								<option value="Pendiente">Aca Fecha Rica</option>
+								<option value="Cancelado">Aca Fecha Rica</option>
+							</select>
+						</div>
+						<span class="filter-icon"><i class="fa fa-filter"></i></span>
+                    </div>
+
+                    <div class="col-sm-3 text-right">
+						<div class="show-entries">
+							<span>Mostrar</span>
+							<select class="form-control" id="per_page" onchange="load(1);">
+								<option>5</option>
+								<option>10</option>
+								<option selected="">15</option>
+								<option>20</option>
+							</select>
+							
+						</div>
+					</div>
+
+
+                </div>
+			</div>
+		<div class="datos_ajax">
+
+		</div>	
+            
+			
+        </div>
+    </div>     
+</body>
+</html>

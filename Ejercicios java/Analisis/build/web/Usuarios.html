@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TABLA USUSARIOS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo1.css">
+    </head>
+    <body>
+        <form action="ServletUsuarios" method="POST">
+            <table class="tabla">
+                <h1 class="titulo">Ingrese la Informacion</h1>
+                <tbody>
+                    <tr>
+                        <td><label for="codigo">Ingrese su Codigo: </label></td>
+                        <td><input type="text" name="codigo" id="codigo" value="" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nombre">Ingrese sus Nombres: </label></td>
+                        <td><input type="text" name="nombre" id="nombre" value="" size="45" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="CONTRA">Ingrese sus contraseña: </label></td>
+                        <td><input type="text" name="CONTRA" value="" id="CONTRA" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tipo">Ingrese el tipo de usuario:</label></td>
+                        <td><input type="text" name="tipo" id="tipo" value="" size="10" /></td>
+                    </tr>
+                    <tr class="uno">
+                        <td colspan="2">
+                            <input class= "btn" type="submit" value="Enviar" />
+                            <input  class="btn" type="reset" value="Limpiar" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
