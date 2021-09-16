@@ -79,9 +79,10 @@
                                         <td><c:out value="${usuario.Tipo_Usuario}"/></td> 
                                         <td><c:out value="Activo"/></td>  
                                         <td><c:out value="${usuario.NombreDepartamento}"/></td> 
+                                        
                                         <td><a class="btn_funcion ingre" href='Usuarios/ingresaruser.jsp'>Ingresar</a></td> 
                                         <td> <a class="btn_funcion mod" href='Usuarios/modificaruser.jsp?id=${usuario.Id_Usuario}&nombre=${usuario.Nombre_Usuario}
-                                                &contrasena=${usuario.Contrasena} &tipo=${usuario.Tipo_Usuario}&depa=${usuario.NombreDepartamento}
+                                                &contrasena=${usuario.Contrasena} &tipo=${usuario.Tipo_Usuario}&pa=${usuario.NombreDepartamento}
                                                 &es=Activo'>Modificar</a> </td>
                                         <td>  <a class="btn_funcion eli" href='Usuarios/eliminaruser.jsp?id=${usuario.Id_Usuario}&nombre=${usuario.Nombre_Usuario}
                                                  &contrasena=${usuario.Contrasena} &tipo=${usuario.Tipo_Usuario}&depa=${usuario.NombreDepartamento}

@@ -30,7 +30,6 @@
             inner join EmpleadoAreaFuncional EF on u.Id_Usuario = EF.IdUsuario 
             inner join Tipo_Usuario tp on u.IdTipoUsuario=tp.Id_Tipo_Usuario 
             where tp.Tipo_Usuario like '%Jefe de desarrollo%';
-
         </sql:query>
 
         <div class="header">
