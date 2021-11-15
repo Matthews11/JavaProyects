@@ -27,6 +27,7 @@ public class DepartamentoDao {
      
        private static String ELIMINAR_USUARIOS_SQL = " delete from departamento where IdDepartamento=?";
 
+       private static String GG="GG";
     //Genera la conexion
     protected Connection getConnection() {
         Connection conn = null;
